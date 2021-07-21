@@ -1,0 +1,35 @@
+homebrew_taps:
+  - homebrew/cask-versions
+  - AdoptOpenJDK/openjdk
+homebrew_cask_apps:
+  - keybase
+  - jetbrains-toolbox
+  - intellij-idea
+  - webstorm
+  - visual-studio-code
+  - iterm2
+  - amazon-chime
+  - rectangle
+  - dozer
+  - alfred
+  - virtualbox
+  - little-snitch
+  - corretto
+  - corretto8
+  - adoptopenjdk12
+  - docker
+homebrew_installed_packages:
+  - sbt
+  - ripgrep
+  - maven
+  - awscli
+  - jq
+  - gpg1
+  - jenv
+  - telnet
+mas_installed_apps:
+  - { id: 1333542190, name: "1Password" }
+  - { id: 904280696,  name: "Things 3" }
+  - { id: 411643860,  name: "DaisyDisk" }
+dotfiles_repo: https://github.com/kadinvanvalin/dotfiles.git
+dotfiles_repo_local_destination: ~/github.com/kadinvanvalin/dotfiles
