@@ -29,6 +29,7 @@ homebrew_installed_packages:
   - jenv
   - telnet
   - kafka
+  - mackup
 mas_installed_apps:
   - { id: 1333542190, name: "1Password" }
   - { id: 904280696,  name: "Things 3" }
