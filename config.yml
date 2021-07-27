@@ -5,6 +5,7 @@ homebrew_cask_apps:
   - keybase
   - jetbrains-toolbox
   - intellij-idea
+  - datagrip
   - webstorm
   - visual-studio-code
   - iterm2
@@ -19,6 +20,7 @@ homebrew_cask_apps:
   - adoptopenjdk12
   - docker
   - dropbox
+  - zoom
 homebrew_installed_packages:
   - sbt
   - ripgrep
@@ -30,6 +32,7 @@ homebrew_installed_packages:
   - telnet
   - kafka
   - mackup
+  - fd
 mas_installed_apps:
   - { id: 1333542190, name: "1Password" }
   - { id: 904280696,  name: "Things 3" }
