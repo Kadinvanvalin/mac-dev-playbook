@@ -21,6 +21,7 @@ homebrew_cask_apps:
   - docker
   - dropbox
   - zoom
+  - menumeters
 homebrew_installed_packages:
   - sbt
   - ripgrep
