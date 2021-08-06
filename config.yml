@@ -37,6 +37,7 @@ homebrew_installed_packages:
   - kafka
   - mackup
   - fd
+  - hashicorp/tap/terraform
 mas_installed_apps:
   - { id: 1333542190, name: "1Password" }
   - { id: 904280696,  name: "Things 3" }
