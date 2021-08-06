@@ -44,4 +44,6 @@ mas_installed_apps:
   - { id: 411643860,  name: "DaisyDisk" }
 dotfiles_repo: https://github.com/kadinvanvalin/dotfiles.git
 dotfiles_repo_local_destination: ~/github.com/kadinvanvalin/dotfiles
-npm_packages: [aws-cdk]
+npm_packages: 
+  - aws-cdk
+  - "@cloudflare/wrangler"
