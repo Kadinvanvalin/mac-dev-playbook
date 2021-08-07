@@ -36,6 +36,7 @@ homebrew_cask_apps:
   - menumeters
   - vagrant
 homebrew_installed_packages:
+  - ruby
   - autoconf
   - bash-completion
   - doxygen
@@ -84,3 +85,6 @@ dotfiles_repo_local_destination: ~/github.com/kadinvanvalin/dotfiles
 npm_packages: 
   - aws-cdk
   - "@cloudflare/wrangler"
+gem_packages:
+  - jekyll 
+  - bundler
