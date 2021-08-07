@@ -34,6 +34,7 @@ homebrew_cask_apps:
   - dropbox
   - zoom
   - menumeters
+  - wireshark
   - vagrant
 homebrew_installed_packages:
   - ruby
