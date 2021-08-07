@@ -1,9 +1,18 @@
+
+configure_dotfiles: true
+configure_terminal: true
+configure_osx: true
 homebrew_taps:
   - homebrew/cask-versions
   - AdoptOpenJDK/openjdk
 dotfiles_files:
-- .gitconfig
-- .aliases
+  - .gitconfig
+  - .aliases
+  - .zshrc
+  - .gitignore
+  - .inputrc
+  - .osx
+  - .vimrc
 homebrew_cask_apps:
   - keybase
   - jetbrains-toolbox
@@ -25,7 +34,34 @@ homebrew_cask_apps:
   - dropbox
   - zoom
   - menumeters
+  - vagrant
 homebrew_installed_packages:
+  - autoconf
+  - bash-completion
+  - doxygen
+  - gettext
+  - gifsicle
+  - git
+  - github/gh/gh
+  - go
+  - gpg
+  - httpie
+  - iperf
+  - libevent
+  - sqlite
+  - mcrypt
+  - nmap
+  - node
+  - nvm
+  - php
+  - ssh-copy-id
+  - cowsay
+  - readline
+  - openssl
+  - pv
+  - wget
+  - wrk
+  - zsh-history-substring-search
   - sbt
   - ripgrep
   - maven
@@ -38,6 +74,7 @@ homebrew_installed_packages:
   - mackup
   - fd
   - hashicorp/tap/terraform
+osx_script: "~/.osx --no-restart"
 mas_installed_apps:
   - { id: 1333542190, name: "1Password" }
   - { id: 904280696,  name: "Things 3" }
