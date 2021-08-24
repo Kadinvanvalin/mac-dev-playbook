@@ -1,10 +1,10 @@
 
 configure_dotfiles: true
 configure_terminal: true
+configure_jenv: true
 configure_osx: true
 homebrew_taps:
   - homebrew/cask-versions
-  - AdoptOpenJDK/openjdk
 dotfiles_files:
   - .gitconfig
   - .aliases
@@ -27,9 +27,6 @@ homebrew_cask_apps:
   - alfred
   - virtualbox
   - little-snitch
-  - corretto
-  - corretto8
-  - adoptopenjdk12
   - docker
   - dropbox
   - zoom
@@ -70,7 +67,6 @@ homebrew_installed_packages:
   - awscli
   - jq
   - gpg1
-  - jenv
   - telnet
   - kafka
   - mackup
@@ -91,3 +87,9 @@ npm_packages:
 gem_packages:
   - jekyll 
   - bundler
+jenv_root: ~/.jenv
+jenv_default_jdk: 16
+jenv_jdks:
+  - version: adoptopenjdk12
+  - version: corretto
+  - version: corretto8
