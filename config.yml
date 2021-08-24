@@ -76,6 +76,7 @@ homebrew_installed_packages:
   - mackup
   - fd
   - hashicorp/tap/terraform
+  - exercism
 osx_script: "~/.osx --no-restart"
 mas_installed_apps:
   - { id: 1333542190, name: "1Password" }
@@ -85,6 +86,7 @@ dotfiles_repo: https://github.com/kadinvanvalin/dotfiles.git
 dotfiles_repo_local_destination: ~/github.com/kadinvanvalin/dotfiles
 npm_packages: 
   - aws-cdk
+  - cdktf-cli
   - "@cloudflare/wrangler"
 gem_packages:
   - jekyll 
