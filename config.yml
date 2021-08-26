@@ -84,6 +84,7 @@ npm_packages:
   - aws-cdk
   - cdktf-cli
   - "@cloudflare/wrangler"
+  - yarn
 gem_packages:
   - jekyll 
   - bundler
