@@ -55,3 +55,11 @@
         loop_var: outer_item
       with_fileglob: "{{ post_provision_tasks|default(omit) }}"
       tags: ['post']
+    - name: update /etc/hosts
+      become: true
+      blockinfile:
+        path: /etc/hosts
+        create: yes
+        block: |
+            # local dev for CJ
+            127.0.0.1 local.cj.com localhost.cj.com devdb.db.cj.com
