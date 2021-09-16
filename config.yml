@@ -33,6 +33,7 @@ homebrew_cask_apps:
   - menumeters
   - wireshark
   - vagrant
+  - graphiql
 homebrew_installed_packages:
   - ruby
   - autoconf
@@ -76,6 +77,9 @@ homebrew_installed_packages:
   - mkcert
   - nss
   - csvkit
+  - graphviz
+  - tmux
+  - fzf
 osx_script: "~/.osx --no-restart"
 mas_installed_apps:
   - { id: 1333542190, name: "1Password" }
