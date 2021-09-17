@@ -34,5 +34,7 @@
       url: https://github.com/vim-utils/vim-man.git
     - name: undotree
       url: https://github.com/mbbill/undotree.git
+    - name: full_path_fuzzy_finder
+      url: https://github.com/kien/ctrlp.vim.git
     - name: YCM
       url: https://github.com/ycm-core/YouCompleteMe.git
