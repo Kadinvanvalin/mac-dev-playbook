@@ -24,6 +24,15 @@
   loop:
     - name: morhetz/gruvbox
       url: https://github.com/morhetz/gruvbox.git
+    - name: vim-ripgrep
+      url: https://github.com/jremmen/vim-ripgrep.git
+    - name: vim-fugitive
+      url: https://github.com/tpope/vim-fugitive.git
+    - name: typescript-vim
+      url: https://github.com/leafgarland/typescript-vim.git
+    - name: vim-man
+      url: https://github.com/vim-utils/vim-man.git
+    - name: undotree
+      url: https://github.com/mbbill/undotree.git
     - name: YCM
-      url: https://github.com/ycm-core/YouCompleteMe
-     
+      url: https://github.com/ycm-core/YouCompleteMe.git
