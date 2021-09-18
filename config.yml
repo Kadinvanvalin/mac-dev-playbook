@@ -80,6 +80,11 @@ homebrew_installed_packages:
   - graphviz
   - tmux
   - fzf
+  - cmake
+  - python
+  - mono
+  - go
+  - vim
 osx_script: "~/.osx --no-restart"
 mas_installed_apps:
   - { id: 1333542190, name: "1Password" }
