@@ -85,6 +85,7 @@ homebrew_installed_packages:
   - mono
   - go
   - vim
+  - the_silver_searcher # ag grep search
 osx_script: "~/.osx --no-restart"
 mas_installed_apps:
   - { id: 1333542190, name: "1Password" }
