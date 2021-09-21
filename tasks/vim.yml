@@ -8,40 +8,40 @@
   loop:
     - "{{ vim_dir }}"
     - "{{ vim_dir }}/undodir"
-    - "{{ vim_dir }}/pack/vendor/start"
-    - "{{ vim_dir }}/bundle"
-# - name: Ensure Plug is in place
-  # get_url:
-    # dest: "{{ vim_dir }}/autoload/plug.vim"
-    # url: https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-- name: Install Vim plugins
-  git:
-    dest: "{{ vim_dir }}/pack/vendor/start/{{ item.name }}"
-    repo: "{{ item.url }}"
-    clone: yes
-    update: no
-    recursive: no
-    track_submodules: no
-  loop:
-    - name: morhetz/gruvbox
-      url: https://github.com/morhetz/gruvbox.git
-    - name: vim-ripgrep
-      url: https://github.com/jremmen/vim-ripgrep.git
-    - name: vim-fugitive
-      url: https://github.com/tpope/vim-fugitive.git
-    - name: typescript-vim
-      url: https://github.com/leafgarland/typescript-vim.git
-    - name: vim-man
-      url: https://github.com/vim-utils/vim-man.git
-    - name: undotree
-      url: https://github.com/mbbill/undotree.git
-    - name: full_path_fuzzy_finder
-      url: https://github.com/kien/ctrlp.vim.git
-    - name: YCM
-      url: https://github.com/ycm-core/YouCompleteMe.git      
-- name: update YCM
-  command: git submodule update --init --recursive
-  args:
-    chdir: "{{ vim_dir }}/pack/vendor/start/YCM/"
-- name: Install YCM
-  command: "python3 {{ vim_dir }}/pack/vendor/start/YCM/install.py --all"
+    - "{{ vim_dir }}/autoload"
+    - "{{ vim_dir }}/plugged"
+- name: Ensure Plug is in place
+  get_url:
+    dest: "{{ vim_dir }}/autoload/plug.vim"
+    url: https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# - name: Install Vim plugins
+#   git:
+#     dest: "{{ vim_dir }}/pack/vendor/start/{{ item.name }}"
+#     repo: "{{ item.url }}"
+#     clone: yes
+#     update: no
+#     recursive: no
+#     track_submodules: no
+#   loop:
+#     - name: morhetz/gruvbox
+#       url: https://github.com/morhetz/gruvbox.git
+#     - name: vim-ripgrep
+#       url: https://github.com/jremmen/vim-ripgrep.git
+#     - name: vim-fugitive
+#       url: https://github.com/tpope/vim-fugitive.git
+#     - name: typescript-vim
+#       url: https://github.com/leafgarland/typescript-vim.git
+#     - name: vim-man
+#       url: https://github.com/vim-utils/vim-man.git
+#     - name: undotree
+#       url: https://github.com/mbbill/undotree.git
+#     - name: full_path_fuzzy_finder
+#       url: https://github.com/kien/ctrlp.vim.git
+#     - name: YCM
+#       url: https://github.com/ycm-core/YouCompleteMe.git      
+# - name: update YCM
+#   command: git submodule update --init --recursive
+#   args:
+#     chdir: "{{ vim_dir }}/pack/vendor/start/YCM/"
+# - name: Install YCM
+#   command: "python3 {{ vim_dir }}/pack/vendor/start/YCM/install.py --all"
