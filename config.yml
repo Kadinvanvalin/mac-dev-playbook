@@ -15,7 +15,6 @@ dotfiles_files:
   - .vimrc
 homebrew_cask_apps:
   - keybase
-  - jetbrains-toolbox
   - intellij-idea
   - datagrip
   - webstorm
@@ -35,6 +34,7 @@ homebrew_cask_apps:
   - vagrant
   - graphiql
   - cocoapods
+  - amethyst
 homebrew_installed_packages:
   - ruby
   - autoconf
