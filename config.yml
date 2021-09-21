@@ -34,6 +34,7 @@ homebrew_cask_apps:
   - wireshark
   - vagrant
   - graphiql
+  - cocoapods
 homebrew_installed_packages:
   - ruby
   - autoconf
@@ -86,6 +87,7 @@ homebrew_installed_packages:
   - go
   - vim
   - the_silver_searcher # ag grep search
+  - carthage
 osx_script: "~/.osx --no-restart"
 mas_installed_apps:
   - { id: 1333542190, name: "1Password" }
