@@ -1,0 +1,14 @@
+---
+- name: Ensure .zsh directory exists
+  file:
+    path: "~/.zsh"
+    state: directory
+    recurse: no
+    mode: 0750
+- name: Clone zsh-autocomplete
+  git:
+    dest: "~/.zsh/zsh-autocomplete"
+    repo: "https://github.com/marlonrichert/zsh-autocomplete.git"
+    clone: yes
+    depth: 1
+

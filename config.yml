@@ -2,7 +2,7 @@
 configure_dotfiles: true
 configure_terminal: true
 configure_jenv: true
-configure_osx: true
+configure_osx: false
 homebrew_taps:
   - homebrew/cask-versions
 dotfiles_files:
@@ -11,7 +11,6 @@ dotfiles_files:
   - .zshrc
   - .gitignore
   - .inputrc
-  - .osx
   - .vimrc
 homebrew_cask_apps:
   - keybase
@@ -35,6 +34,7 @@ homebrew_cask_apps:
   - graphiql
   - cocoapods
   - amethyst
+  - bettertouchtool
 homebrew_installed_packages:
   - ruby
   - autoconf
@@ -94,12 +94,14 @@ mas_installed_apps:
   - { id: 904280696,  name: "Things 3" }
   - { id: 411643860,  name: "DaisyDisk" }
 dotfiles_repo: https://github.com/kadinvanvalin/dotfiles.git
+dotfiles_repo_version: main
 dotfiles_repo_local_destination: ~/github.com/kadinvanvalin/dotfiles
 npm_packages: 
   - aws-cdk
   - cdktf-cli
   - "@cloudflare/wrangler"
   - yarn
+  - tldr
 gem_packages:
   - jekyll 
   - bundler
