@@ -15,8 +15,6 @@ dotfiles_files:
 homebrew_cask_apps:
   - keybase
   - intellij-idea
-  - datagrip
-  - webstorm
   - visual-studio-code
   - amazon-chime
   - rectangle
@@ -30,14 +28,11 @@ homebrew_cask_apps:
   - menumeters
   - wireshark
   - vagrant
-  - graphiql
   - cocoapods
   - amethyst
 homebrew_installed_packages:
   - ruby
   - autoconf
-  - bash-completion
-  - doxygen
   - gettext
   - gifsicle
   - git
