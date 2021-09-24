@@ -22,7 +22,6 @@ homebrew_cask_apps:
   - alfred
   - virtualbox
   - little-snitch
-  - docker
   - dropbox
   - zoom
   - menumeters
