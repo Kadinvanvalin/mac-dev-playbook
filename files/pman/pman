@@ -1,0 +1,20 @@
+#!/bin/bash
+
+export VAGRANT_CWD=~/tools/podman
+
+ACTION=$1
+
+case $ACTION in
+  "down")
+    echo "Shutting down podman"
+    vagrant halt
+    ;;
+
+  "up")
+    echo "STARTING podman"
+    vagrant up
+    ;;
+  "")
+    echo "Run pman with up or down"
+    ;;
+esac

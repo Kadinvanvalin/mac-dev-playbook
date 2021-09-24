@@ -1,0 +1,16 @@
+---
+- name: configure vagrant to work with podman
+  file:
+    path: "~/tools/podman"
+    state: directory
+    recurse: yes
+    mode: 0750
+- name: Clone podmanvagrant
+  copy:
+    src: files/pman/Vagrantfile
+    dest: "~/tools/podman/Vagrantfile"
+- name: Copy pman to path
+  copy:
+    src: files/pman/pman
+    dest: "/usr/local/bin/pman"
+    mode: 0755
