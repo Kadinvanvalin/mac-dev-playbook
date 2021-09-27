@@ -1,0 +1,11 @@
+---
+- name: update /etc/pam.d/sudo
+  become: true
+  blockinfile:
+    path: /etc/pam.d/sudo
+    create: yes
+    block: |
+            # allow touchid
+            auth sufficient pam_tid.so
+
+

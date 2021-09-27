@@ -52,6 +52,8 @@
       tags: ['zsh']  
     - import_tasks: tasks/vim.yml
       tags: ['vim']
+    - import_tasks: tasks/touch_id_sudo.yml 
+      tags: ['sudo']
     - name: Run configured post-provision ansible task files.
       include_tasks: "{{ outer_item }}"
       loop_control:
