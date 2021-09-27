@@ -62,11 +62,5 @@
       tags: ['post']
     - import_tasks: tasks/vagrant.yml
       tags: ['vagrant']
-    - name: update /etc/hosts
-      become: true
-      blockinfile:
-        path: /etc/hosts
-        create: yes
-        block: |
-            # local dev for CJ
-            127.0.0.1 local.cj.com localhost.cj.com devdb.db.cj.com
+    - import_tasks: tasks/hosts.yml
+      tags: ['hosts']

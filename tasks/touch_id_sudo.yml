@@ -1,11 +1,10 @@
 ---
-- name: update /etc/pam.d/sudo
+- name: Ensure can sudo with touchid
   become: true
   blockinfile:
-    path: /etc/pam.d/sudo
-    create: yes
+    name: '/etc/pam.d/sudo'
+    create: no
+    insertbefore: BOF
     block: |
-            # allow touchid
-            auth sufficient pam_tid.so
-
-
+      # allow touchid
+      auth sufficient pam_tid.so
