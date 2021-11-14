@@ -29,6 +29,7 @@ homebrew_cask_apps:
   - vagrant
   - cocoapods
   - amethyst
+  - alacritty
 homebrew_installed_packages:
   - ruby
   - autoconf
@@ -82,7 +83,6 @@ homebrew_installed_packages:
   - carthage
   - nginx 
   - podman
-  - iterm
 osx_script: "~/.osx --no-restart"
 mas_installed_apps:
   - { id: 1333542190, name: "1Password" }
