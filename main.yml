@@ -5,6 +5,9 @@
     - default.config.yml
 
   pre_tasks:
+    - name: try to use pause
+      pause:
+        prompt: "press any key"
     - name: Include playbook configuration.
       include_vars: "{{ item }}"
       with_fileglob:
@@ -30,6 +33,9 @@
         ansible_user: lookup('env', 'USER')
 
   tasks:
+    - name: pause for do nothing script
+      pause:
+        prompt: "press any key to continue"
     - import_tasks: tasks/sudoers.yml
       when: configure_sudoers
       tags: ['sudoers']

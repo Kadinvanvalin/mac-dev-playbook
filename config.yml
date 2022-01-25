@@ -12,6 +12,7 @@ dotfiles_files:
   - .gitignore
   - .inputrc
   - .vimrc
+  - .config
 homebrew_cask_apps:
   - keybase
   - intellij-idea
@@ -83,6 +84,7 @@ homebrew_installed_packages:
   - carthage
   - nginx 
   - podman
+  - coreutils
 osx_script: "~/.osx --no-restart"
 mas_installed_apps:
   - { id: 1333542190, name: "1Password" }
