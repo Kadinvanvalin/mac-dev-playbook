@@ -66,5 +66,7 @@
         loop_var: outer_item
       with_fileglob: "{{ post_provision_tasks|default(omit) }}"
       tags: ['post']
+    - import_tasks: tasks/config_colima.yml
+      tags: ['colima']
     # - import_tasks: tasks/hosts.yml
       # tags: ['hosts']

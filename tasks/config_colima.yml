@@ -1,0 +1,13 @@
+---
+- name: We need to configure colima. Run these commands in another terminal
+  pause:
+    prompt: "press enter when you complete each step"
+- name: run "colima ssh"
+  pause:
+    prompt: "You are sshing into the vm"
+- name: run "echo "192.168.5.2  host.docker.internal" | sudo tee -a /etc/hosts"
+  pause:
+    prompt: "this adds dockers hostname to your colima vm, to make it function seamlessly with docker"
+- name: run "exit"
+  pause:
+    prompt: "exits the vm, all done!"
