@@ -3,7 +3,6 @@
     "files.autoSave": "onFocusChange",
     "window.zoomLevel": 2,
     "terminal.integrated.rendererType": "dom",
-    "sync.gist": "5cefeb9670988fd9915376588e2640b2",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.fontFamily": "OpenDyslexicMono",
