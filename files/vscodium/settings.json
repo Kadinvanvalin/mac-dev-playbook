@@ -1,0 +1,61 @@
+{
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "window.zoomLevel": 2,
+    "terminal.integrated.rendererType": "dom",
+    "sync.gist": "5cefeb9670988fd9915376588e2640b2",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.fontFamily": "OpenDyslexicMono",
+    "terminal.external.linuxExec": "iterm",
+    "terminal.external.osxExec": "iTerm.app",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.autofetch": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/env": true,
+        "**/venv": true
+      },
+      "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/env/**": true,
+        "**/venv/**": true,
+        "env-*": true
+      },
+      "files.exclude": {
+        "": true,
+        "**/.DS_Store": false,
+        "**/.git": false,
+        "**/.hg": false,
+        "**/.svn": false,
+        "**/CVS": false,
+        "**/Thumbs.db": false
+    },    
+    "editor.tabSize": 2,
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "workbench.colorTheme": "Cobalt2",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "gitlens.hovers.currentLine.over": "line"
+}

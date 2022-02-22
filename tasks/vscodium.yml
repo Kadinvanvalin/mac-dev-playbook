@@ -1,0 +1,17 @@
+---
+- name: Ensure vscodium Text directories exist. /Library/Application Support/VSCodium/User
+  file:
+    path: "{{ item }}"
+    state: directory
+  loop:
+    - "{{ codium_base_path }}/{{ sublime_config_path }}"
+
+
+- name: Ensure VsCodium text user Preferences are set.
+  copy:
+    src: "files/vscodium/{{ item }}"
+    dest: "{{ codium_base_path }}/{{ codium_config_path }}/{{ item }}"
+  loop:
+    - "keybindings.json"
+    - "settings.json"
+

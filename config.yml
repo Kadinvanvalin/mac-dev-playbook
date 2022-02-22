@@ -13,6 +13,7 @@ dotfiles_files:
   - .inputrc
   - .vimrc
   - .config
+  - .vscode-oss
 homebrew_cask_apps:
   - keybase
   - intellij-idea
@@ -114,3 +115,7 @@ jenv_jdks:
   - version: adoptopenjdk12
   - version: corretto
   - version: corretto8
+configure_codium: true
+codium_base_path: '~/Library/Application Support/VSCodium'
+codium_config_path: "User"
+
