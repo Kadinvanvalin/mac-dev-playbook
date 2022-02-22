@@ -33,9 +33,9 @@
         ansible_user: lookup('env', 'USER')
 
   tasks:
-    - name: pause for do nothing script
+    - name: configure vscodium
       pause:
-        prompt: "press any key to continue"
+        prompt: "https://github.com/VSCodium/vscodium/blob/master/DOCS.md"
     - import_tasks: tasks/sudoers.yml
       when: configure_sudoers
       tags: ['sudoers']
