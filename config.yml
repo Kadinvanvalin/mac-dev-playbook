@@ -14,6 +14,7 @@ dotfiles_files:
   - .vimrc
   - .config
   - .vscode-oss
+  - .colima
 homebrew_cask_apps:
   - keybase
   - intellij-idea
