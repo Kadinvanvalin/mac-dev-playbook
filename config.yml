@@ -13,7 +13,6 @@ dotfiles_files:
   - .inputrc
   - .vimrc
   - .config
-  - .vscode-oss
   - .colima
 homebrew_cask_apps:
   - keybase
@@ -119,4 +118,13 @@ jenv_jdks:
 configure_codium: true
 codium_base_path: '~/Library/Application Support/VSCodium'
 codium_config_path: "User"
+codium_package_control:
+  - "aaron-bond.better-comments"
+  - "christian-kohler.path-intellisense"
+  - "eamodio.gitlens"
+  - "hashicorp.terraform"
+  - "johnpapa.vscode-peacock"
+  - "Orta.vscode-jest"
+  - "scala-lang.scala"
+
 

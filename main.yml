@@ -33,9 +33,6 @@
         ansible_user: lookup('env', 'USER')
 
   tasks:
-    - name: configure vscodium
-      pause:
-        prompt: "https://github.com/VSCodium/vscodium/blob/master/DOCS.md"
     - import_tasks: tasks/sudoers.yml
       when: configure_sudoers
       tags: ['sudoers']
@@ -56,7 +53,7 @@
       tags: ['sublime-text']
     - import_tasks: tasks/vscodium.yml
       when: configure_codium
-      tags: ['vscodium-text']
+      tags: ['vscodium']
     - import_tasks: tasks/zsh.yml
       tags: ['zsh']  
     - import_tasks: tasks/vim.yml

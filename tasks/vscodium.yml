@@ -15,3 +15,11 @@
     - "keybindings.json"
     - "settings.json"
 
+- name: Check if any extensions were added in the UI and prompt to update script if there ar
+  pause:
+    prompt: "codium --list-extensions"
+- name: installing extensions
+  shell: "codium --install-extension {{ item.name | default(item) }} --force"
+  loop: "{{ codium_package_control }}"
+  register: dep
+  changed_when: "' is already installed.' not in dep.stdout"
