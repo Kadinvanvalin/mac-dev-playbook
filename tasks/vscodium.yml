@@ -5,8 +5,6 @@
     state: directory
   loop:
     - "{{ codium_base_path }}/{{ sublime_config_path }}"
-
-
 - name: Ensure VsCodium text user Preferences are set.
   copy:
     src: "files/vscodium/{{ item }}"
@@ -14,12 +12,21 @@
   loop:
     - "keybindings.json"
     - "settings.json"
-
-- name: Check if any extensions were added in the UI and prompt to update script if there ar
-  pause:
-    prompt: "codium --list-extensions"
 - name: installing extensions
   shell: "codium --install-extension {{ item.name | default(item) }} --force"
   loop: "{{ codium_package_control }}"
   register: dep
   changed_when: "' is already installed.' not in dep.stdout"
+- name: Check if any extensions were added in the UI and prompt to update script if there ar
+  shell: "codium --list-extensions"
+  register: installed_extensions
+- name: test installed
+  with_items:
+    - "{{ installed_extensions.stdout_lines }}"
+  assert:
+    that:
+      - "item in codium_package_control"
+    success_msg:
+      - "{{ item }} good"
+    fail_msg:
+      - "{{ item }}  was not installed through the UI - please add to ansible playbook"

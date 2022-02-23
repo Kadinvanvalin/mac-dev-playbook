@@ -126,5 +126,9 @@ codium_package_control:
   - "johnpapa.vscode-peacock"
   - "Orta.vscode-jest"
   - "scala-lang.scala"
+  - "redhat.ansible"
+  - "redhat.vscode-yaml"
+  - "ms-toolsai.jupyter"
+  - "ms-python.python"
 
 
