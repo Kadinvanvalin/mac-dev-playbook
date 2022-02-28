@@ -2,11 +2,10 @@
 - name: create cron to push notebook every 15 minutes
   ansible.builtin.cron:
     name: notebook autoupdate
-    weekday: "2"
-    minute: "0"
-    hour: "12"
-    user: root
-    job: "YUMINTERACTIVE=0 /usr/sbin/yum-autoupdate"
-    cron_file: ansible_yum-autoupdate
-# /Users/kadvanv/github.com/kadinvanvalin/notes
+    weekday: "*"
+    minute: "*/15"
+    hour: "*"
+    user: kadvanv
+    job: "cd ~/github.com/kadinvanvalin/notes; git wip"
+
 
