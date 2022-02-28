@@ -1,4 +1,12 @@
 ---
+- name: create cron to pull notebook every 15 minutes
+  ansible.builtin.cron:
+    name: notebook pull
+    weekday: "*"
+    minute: "*/15"
+    hour: "*"
+    user: "{{ ansible_user_id }}"
+    job: "cd ~/github.com/kadinvanvalin/notes; git pull"
 - name: create cron to push notebook every 15 minutes
   ansible.builtin.cron:
     name: notebook autoupdate
