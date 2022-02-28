@@ -5,7 +5,7 @@
     weekday: "*"
     minute: "*/15"
     hour: "*"
-    user: kadvanv
+    user: "{{ ansible_user_id }}"
     job: "cd ~/github.com/kadinvanvalin/notes; git wip"
 
 
