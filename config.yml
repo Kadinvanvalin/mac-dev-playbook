@@ -88,6 +88,7 @@ homebrew_installed_packages:
   - docker-compose
   - colima
   - coreutils
+  - mit-scheme # for sicp
 homebrew_uninstalled_packages:
   - podman
   - amethyst
