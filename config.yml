@@ -131,5 +131,14 @@ codium_package_control:
   - "redhat.vscode-yaml"
   - "ms-toolsai.jupyter"
   - "ms-python.python"
-
-
+asdf_plugins:
+  - name: "nodejs"        
+    environment: {} # an optional dictionary of environment variables for build configuration
+    versions:
+      - lts-gallium
+    global: lts-gallium    # set as a global version, optional
+  - name: "java"  
+    versions:
+      - corretto-17.0.2.8.1
+      - corretto-8.322.06.1
+    global: corretto-17.0.2.8.1 
