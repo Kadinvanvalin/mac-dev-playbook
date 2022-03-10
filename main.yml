@@ -24,7 +24,7 @@
     - role: geerlingguy.mac.dock
       when: configure_dock
       tags: ['dock']
-    - role: role-asdf-master
+    - role: asdf
       tags: ['asdf']
     - role: jenv
       tags: ['jenv']

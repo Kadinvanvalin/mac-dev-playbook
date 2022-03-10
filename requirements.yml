@@ -4,6 +4,8 @@ roles:
   - name: geerlingguy.dotfiles
   - name: jenv
     src: git+https://github.com/EiyuuZack/ansible-role-jenv.git
+  - name: asdf
+    src: git+https://github.com/osx-provisioner/role-asdf.git
 
 collections:
   - name: geerlingguy.mac

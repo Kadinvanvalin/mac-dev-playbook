@@ -2,8 +2,6 @@
 
 
 
-# ROLES
-https://github.com/osx-provisioner/role-asdf
 # Mac Development Ansible Playbook
 
 [![CI][badge-gh-actions]][link-gh-actions]
