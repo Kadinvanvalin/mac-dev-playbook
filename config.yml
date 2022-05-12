@@ -5,7 +5,7 @@ configure_jenv: true
 configure_osx: false
 homebrew_taps:
   - homebrew/cask-versions
-dotfiles_files:
+dotfiles_files: # loading all of these dotfiles from my repo
   - .gitconfig
   - .aliases
   - .zshrc
@@ -15,25 +15,26 @@ dotfiles_files:
   - .config
   - .colima
 homebrew_cask_apps:
-  - keybase
-  - intellij-idea
-  - amazon-chime
-  - rectangle
-  - dozer
-  - alfred
-  - virtualbox
-  - little-snitch
-  - dropbox
-  - zoom
-  - menumeters
-  - wireshark
-  - vagrant
+  - keybase # CJ uses this for secure communication
+  - intellij-idea # CJ IDE
+  - amazon-chime # AWS slack clone for communication with aws support
+  - rectangle # window manager
+  - dozer # hides icons on the navbar
+  - alfred # spotlight replacement
+  - virtualbox # intel only for CJ
+  - little-snitch # Paid app that monitors my network
+  - dropbox # everyone knows what dropbox is, right?
+  - zoom # maybe should remove - I use it VERY rarely 
+  - menumeters # CPU and memory monitoring
+  - wireshark # more traffic monitoring
+  - vagrant 
   - cocoapods
-  - alacritty
-  - obsidian
-  - vscodium
-  - warp
+  - obsidian # Markdown editor that I use for notes
+  - vscodium # lighter weight IDE
+  - warp # terminal alternatice
   - contexts
+homebrew_cask_uninstalled_apps:
+  - alacritty # terminal replacement - I am trying out warp now
 homebrew_installed_packages:
   - ruby
   - autoconf
@@ -68,10 +69,10 @@ homebrew_installed_packages:
   - gpg1
   - telnet
   - kafka
-  - mackup
+  - mackup # maybe should uninstall - its for syncing preferences but ansible is doing that for me now
   - fd
   - hashicorp/tap/terraform
-  - exercism
+  - exercism # cli for exercism. A coding exercise website
   - mkcert
   - nss
   - csvkit
@@ -90,15 +91,16 @@ homebrew_installed_packages:
   - docker-compose
   - colima
   - coreutils
-  - mit-scheme # for sicp
+  - mit-scheme # for sicp book
+  - thefuck # aliased to opps - that corrects errors in previous console commands
 homebrew_uninstalled_packages:
-  - podman
-  - amethyst
-  - visual-studio-code
+  - podman # using colima instead
+  - amethyst # nice idea - but rectangle is easier to use
+  - visual-studio-code # using vscodium instead
 osx_script: "~/.osx --no-restart"
-mas_installed_apps:
+mas_installed_apps: # apps I pay for
   - { id: 1333542190, name: "1Password" }
-  - { id: 904280696,  name: "Things 3" }
+  - { id: 904280696,  name: "Things 3" } # todo list
   - { id: 411643860,  name: "DaisyDisk" }
 dotfiles_repo: https://github.com/kadinvanvalin/dotfiles.git
 dotfiles_repo_version: main
