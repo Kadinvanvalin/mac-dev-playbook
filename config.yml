@@ -32,6 +32,8 @@ homebrew_cask_apps:
   - alacritty
   - obsidian
   - vscodium
+  - warp
+  - contexts
 homebrew_installed_packages:
   - ruby
   - autoconf
@@ -110,6 +112,10 @@ npm_packages:
 gem_packages:
   - jekyll 
   - bundler
+pip_packages:
+  - boto3
+  - botocore
+  - jmespath
 jenv_root: ~/.jenv
 jenv_default_jdk: 16
 jenv_jdks:
