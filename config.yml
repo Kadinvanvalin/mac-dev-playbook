@@ -32,7 +32,8 @@ homebrew_cask_apps:
   - obsidian # Markdown editor that I use for notes
   - vscodium # lighter weight IDE
   - warp # terminal alternatice
-  - contexts
+  - context
+  - 1password
 homebrew_cask_uninstalled_apps:
   - alacritty # terminal replacement - I am trying out warp now
 homebrew_installed_packages:
@@ -99,7 +100,7 @@ homebrew_uninstalled_packages:
   - visual-studio-code # using vscodium instead
 osx_script: "~/.osx --no-restart"
 mas_installed_apps: # apps I pay for
-  - { id: 1333542190, name: "1Password" }
+  # - { id: 1333542190, name: "1Password" }
   - { id: 904280696,  name: "Things 3" } # todo list
   - { id: 411643860,  name: "DaisyDisk" }
 dotfiles_repo: https://github.com/kadinvanvalin/dotfiles.git
