@@ -32,8 +32,8 @@ homebrew_cask_apps:
   - obsidian # Markdown editor that I use for notes
   - vscodium # lighter weight IDE
   - warp # terminal alternatice
-  - context
-  - 1password
+  - contexts
+  - 1password # lastpass is a good alternative - I should maybe host my own
 homebrew_cask_uninstalled_apps:
   - alacritty # terminal replacement - I am trying out warp now
 homebrew_installed_packages:
