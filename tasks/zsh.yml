@@ -11,4 +11,15 @@
     repo: "https://github.com/marlonrichert/zsh-autocomplete.git"
     clone: yes
     depth: 1
-
+- name: Clone fzf-tab
+  git:
+    dest: "~/.zsh/fzf-tab"
+    repo: "https://github.com/Aloxaf/fzf-tab.git"
+    clone: yes
+    depth: 1
+- name: Clone zsh-autosuggestions
+  git:
+    dest: "~/.zsh/zsh-autosuggestions"
+    repo: "https://github.com/zsh-users/zsh-autosuggestions"
+    clone: yes
+    depth: 1
