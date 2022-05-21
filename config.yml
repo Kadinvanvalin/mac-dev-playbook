@@ -94,6 +94,7 @@ homebrew_installed_packages:
   - coreutils
   - mit-scheme # for sicp book
   - thefuck # aliased to opps - that corrects errors in previous console commands
+  - rustup-init
 homebrew_uninstalled_packages:
   - podman # using colima instead
   - amethyst # nice idea - but rectangle is easier to use
