@@ -141,6 +141,7 @@ codium_package_control:
   - "redhat.vscode-yaml"
   - "ms-toolsai.jupyter"
   - "ms-python.python"
+  - "vscodevim.vim"
 asdf_plugins:
   - name: "nodejs"        
     environment: {} # an optional dictionary of environment variables for build configuration
