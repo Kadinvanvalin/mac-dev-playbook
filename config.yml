@@ -31,11 +31,12 @@ homebrew_cask_apps:
   - cocoapods
   - obsidian # Markdown editor that I use for notes
   - vscodium # lighter weight IDE
-  - warp # terminal alternatice
   - contexts
   - 1password # lastpass is a good alternative - I should maybe host my own
+  - alacritty # terminal replacement - warp breaks fzf
 homebrew_cask_uninstalled_apps:
-  - alacritty # terminal replacement - I am trying out warp now
+  - warp # terminal alternatice
+  - visual-studio-code # using vscodium instead
 homebrew_installed_packages:
   - ruby
   - autoconf
@@ -98,7 +99,6 @@ homebrew_installed_packages:
 homebrew_uninstalled_packages:
   - podman # using colima instead
   - amethyst # nice idea - but rectangle is easier to use
-  - visual-studio-code # using vscodium instead
 osx_script: "~/.osx --no-restart"
 mas_installed_apps: # apps I pay for
   # - { id: 1333542190, name: "1Password" }
