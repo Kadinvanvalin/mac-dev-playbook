@@ -14,6 +14,7 @@ dotfiles_files: # loading all of these dotfiles from my repo
   - .vimrc
   - .config
   - .colima
+  - .tmux.conf
 homebrew_cask_apps:
   - keybase # CJ uses this for secure communication
   - intellij-idea # CJ IDE
