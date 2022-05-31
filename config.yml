@@ -97,9 +97,14 @@ homebrew_installed_packages:
   - mit-scheme # for sicp book
   - thefuck # aliased to opps - that corrects errors in previous console commands
   - rustup-init
-  - tree
+  - exa # ls and tree replacement
+  - bat # cat replacement
+  - zoxide # cd replacement
+  - entr # Run arbitrary commands when files change
+    # - midnight-commander # Terminal-based visual file manager
 homebrew_uninstalled_packages:
   - podman # using colima instead
+  - tree # replace with exa alias
   - amethyst # nice idea - but rectangle is easier to use
 osx_script: "~/.osx --no-restart"
 mas_installed_apps: # apps I pay for
