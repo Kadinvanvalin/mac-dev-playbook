@@ -1,7 +1,7 @@
 
 configure_dotfiles: true
 configure_terminal: true
-configure_jenv: true
+# configure_jenv: true
 configure_osx: false
 homebrew_taps:
   - homebrew/cask-versions
@@ -127,12 +127,12 @@ pip_packages:
   - boto3
   - botocore
   - jmespath
-jenv_root: ~/.jenv
-jenv_default_jdk: 16
-jenv_jdks:
-  - version: adoptopenjdk12
-  - version: corretto
-  - version: corretto8
+# jenv_root: ~/.jenv
+# jenv_default_jdk: 16
+# jenv_jdks:
+#   - version: adoptopenjdk12
+#   - version: corretto
+#   - version: corretto8
 configure_codium: true
 codium_base_path: '~/Library/Application Support/VSCodium'
 codium_config_path: "User"
