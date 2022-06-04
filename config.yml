@@ -101,6 +101,8 @@ homebrew_installed_packages:
   - bat # cat replacement
   - zoxide # cd replacement
   - entr # Run arbitrary commands when files change
+  - yabai
+  - skhd
     # - midnight-commander # Terminal-based visual file manager
 homebrew_uninstalled_packages:
   - podman # using colima instead
