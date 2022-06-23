@@ -95,6 +95,7 @@ homebrew_installed_packages:
   - docker-compose
   - colima
   - coreutils
+  - findutils
   - mit-scheme # for sicp book
   - thefuck # aliased to opps - that corrects errors in previous console commands
   - rustup-init
