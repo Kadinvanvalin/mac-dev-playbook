@@ -6,6 +6,7 @@ configure_osx: false
 homebrew_taps:
   - homebrew/cask-versions
   - helix-editor/helix
+  - remotemobprogramming/brew
 dotfiles_files: # loading all of these dotfiles from my repo
   - .gitconfig
   - .aliases
@@ -16,6 +17,7 @@ dotfiles_files: # loading all of these dotfiles from my repo
   - .config
   - .colima
   - .tmux.conf
+  - .local
 homebrew_cask_apps:
   - keybase # CJ uses this for secure communication
   - intellij-idea # CJ IDE
@@ -95,7 +97,7 @@ homebrew_installed_packages:
   - docker-compose
   - colima
   - coreutils
-  - findutils
+  - findutils # Collection of GNU find, xargs, and locate
   - mit-scheme # for sicp book
   - thefuck # aliased to opps - that corrects errors in previous console commands
   - rustup-init
@@ -106,7 +108,9 @@ homebrew_installed_packages:
   - yabai
   - skhd
   - helix
-    # - midnight-commander # Terminal-based visual file manager
+  - mob # tool for pairing and keeping git clean
+#  - visualvm # All-in-One Java Troubleshooting Tool
+  # - midnight-commander # Terminal-based visual file manager
 homebrew_uninstalled_packages:
   - podman # using colima instead
   - tree # replace with exa alias
