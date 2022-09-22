@@ -38,6 +38,7 @@ homebrew_cask_apps:
   - contexts
   - 1password # lastpass is a good alternative - I should maybe host my own
   - alacritty # terminal replacement - warp breaks fzf
+  - keycastr # for better pairing
 homebrew_cask_uninstalled_apps:
   - warp # terminal alternatice
   - visual-studio-code # using vscodium instead
@@ -105,8 +106,8 @@ homebrew_installed_packages:
   - bat # cat replacement
   - zoxide # cd replacement
   - entr # Run arbitrary commands when files change
-  - yabai
-  - skhd
+  - yabai # window manager
+  - skhd # window manger helper?
   - helix
   - mob # tool for pairing and keeping git clean
 #  - visualvm # All-in-One Java Troubleshooting Tool
