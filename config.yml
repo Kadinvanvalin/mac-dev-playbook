@@ -39,6 +39,7 @@ homebrew_cask_apps:
   - 1password # lastpass is a good alternative - I should maybe host my own
   - alacritty # terminal replacement - warp breaks fzf
   - keycastr # for better pairing
+  - whichspace # displays current space in top bar
 homebrew_cask_uninstalled_apps:
   - warp # terminal alternatice
   - visual-studio-code # using vscodium instead
