@@ -71,3 +71,5 @@
       tags: ['cron']
     - import_tasks: tasks/hosts.yml
       tags: ['hosts']
+    - import_tasks: tasks/docker-plugins.yml
+      tags: ['docker-plugins']

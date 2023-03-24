@@ -1,0 +1,10 @@
+---
+- name: Ensure docker cli directory exists.
+  file:
+    path: "~/.docker/cli-plugins"
+    state: directory
+- name: Create symlink for docker compose docker cli directory exists.
+  file:
+    src: "/usr/local/bin/docker-compose"
+    dest: "~/.docker/cli-plugins/docker-compose"
+    state: link
