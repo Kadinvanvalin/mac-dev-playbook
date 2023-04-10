@@ -18,6 +18,7 @@ dotfiles_files: # loading all of these dotfiles from my repo
   - .colima
   - .tmux.conf
   - .local
+  - .amethyst.yml
 homebrew_cask_apps:
   - keybase # CJ uses this for secure communication
   - intellij-idea # CJ IDE
@@ -40,6 +41,7 @@ homebrew_cask_apps:
   - alacritty # terminal replacement - warp breaks fzf
   - keycastr # for better pairing
   - whichspace # displays current space in top bar
+  - amethyst # nice idea - but rectangle is easier to use
 homebrew_cask_uninstalled_apps:
   - warp # terminal alternatice
   - visual-studio-code # using vscodium instead
@@ -107,8 +109,7 @@ homebrew_installed_packages:
   - bat # cat replacement
   - zoxide # cd replacement
   - entr # Run arbitrary commands when files change
-  - yabai # window manager
-  - skhd # window manger helper?
+
   - helix
   - mob # tool for pairing and keeping git clean
 #  - visualvm # All-in-One Java Troubleshooting Tool
@@ -116,7 +117,8 @@ homebrew_installed_packages:
 homebrew_uninstalled_packages:
   - podman # using colima instead
   - tree # replace with exa alias
-  - amethyst # nice idea - but rectangle is easier to use
+  - yabai # window manager - unstable trying amethyst again
+  - skhd # window manger helper? - unstable trying amethyst again
 osx_script: "~/.osx --no-restart"
 mas_installed_apps: # apps I pay for
   # - { id: 1333542190, name: "1Password" }
