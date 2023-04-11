@@ -23,7 +23,6 @@ homebrew_cask_apps:
   - keybase # CJ uses this for secure communication
   - intellij-idea # CJ IDE
   - amazon-chime # AWS slack clone for communication with aws support
-  - rectangle # window manager
   - dozer # hides icons on the navbar
   - alfred # spotlight replacement
   - virtualbox # intel only for CJ
@@ -45,6 +44,7 @@ homebrew_cask_apps:
 homebrew_cask_uninstalled_apps:
   - warp # terminal alternatice
   - visual-studio-code # using vscodium instead
+  - rectangle # window manager
 homebrew_installed_packages:
   - ruby
   - autoconf
@@ -109,12 +109,11 @@ homebrew_installed_packages:
   - bat # cat replacement
   - zoxide # cd replacement
   - entr # Run arbitrary commands when files change
-
-  - helix
   - mob # tool for pairing and keeping git clean
 #  - visualvm # All-in-One Java Troubleshooting Tool
   # - midnight-commander # Terminal-based visual file manager
 homebrew_uninstalled_packages:
+  - helix # using vim
   - podman # using colima instead
   - tree # replace with exa alias
   - yabai # window manager - unstable trying amethyst again
