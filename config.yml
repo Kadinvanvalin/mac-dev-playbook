@@ -25,7 +25,6 @@ homebrew_cask_apps:
   - amazon-chime # AWS slack clone for communication with aws support
   - dozer # hides icons on the navbar
   - alfred # spotlight replacement
-  - virtualbox # intel only for CJ
   - little-snitch # Paid app that monitors my network
   - dropbox # everyone knows what dropbox is, right?
   - zoom # maybe should remove - I use it VERY rarely 
@@ -42,10 +41,13 @@ homebrew_cask_apps:
   - whichspace # displays current space in top bar
   - amethyst # nice idea - but rectangle is easier to use
 homebrew_cask_uninstalled_apps:
+  - virtualbox # intel only for CJ
   - warp # terminal alternatice
   - visual-studio-code # using vscodium instead
   - rectangle # window manager
 homebrew_installed_packages:
+  - zellij # terminal multiplexer
+  - starship # fancy prompt
   - ruby
   - autoconf
   - gettext
@@ -79,7 +81,6 @@ homebrew_installed_packages:
   - gpg1
   - telnet
   - kafka
-  - mackup # maybe should uninstall - its for syncing preferences but ansible is doing that for me now
   - fd
   - hashicorp/tap/terraform
   - exercism # cli for exercism. A coding exercise website
@@ -87,7 +88,6 @@ homebrew_installed_packages:
   - nss
   - csvkit
   - graphviz
-  - tmux
   - fzf
   - cmake
   - python
@@ -102,7 +102,6 @@ homebrew_installed_packages:
   - colima
   - coreutils
   - findutils # Collection of GNU find, xargs, and locate
-  - mit-scheme # for sicp book
   - thefuck # aliased to opps - that corrects errors in previous console commands
   - rustup-init
   - exa # ls and tree replacement
@@ -110,10 +109,13 @@ homebrew_installed_packages:
   - zoxide # cd replacement
   - entr # Run arbitrary commands when files change
   - mob # tool for pairing and keeping git clean
-#  - visualvm # All-in-One Java Troubleshooting Tool
-  # - midnight-commander # Terminal-based visual file manager
 homebrew_uninstalled_packages:
   - helix # using vim
+  - tmux # trying zellij
+  - mackup # maybe should uninstall - its for syncing preferences but ansible is doing that for me now
+  - visualvm # All-in-One Java Troubleshooting Tool
+  - midnight-commander # Terminal-based visual file manager
+  - mit-scheme # for sicp book
   - podman # using colima instead
   - tree # replace with exa alias
   - yabai # window manager - unstable trying amethyst again
