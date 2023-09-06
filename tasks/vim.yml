@@ -23,6 +23,9 @@
 #     recursive: no
 #     track_submodules: no
 #   loop:
+#     - name: christoomey/vim-tmux-navigator
+#      url: https://github.com/christoomey/vim-tmux-navigator.git
+# github.com:christoomey/vim-tmux-navigator.git ~/.vim/pack/plugins/start/vim-tmux-navigator
 #     - name: morhetz/gruvbox
 #       url: https://github.com/morhetz/gruvbox.git
 #     - name: vim-ripgrep

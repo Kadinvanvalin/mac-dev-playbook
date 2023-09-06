@@ -1,0 +1,7 @@
+---
+- name: clone tmux package manager
+  ansible.builtin.git:
+    repo: https://github.com/tmux-plugins/tpm
+    dest: ~/.tmux/plugins/tpm
+    single_branch: yes
+    version: master

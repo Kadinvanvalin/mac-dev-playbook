@@ -46,7 +46,7 @@ homebrew_cask_uninstalled_apps:
   - visual-studio-code # using vscodium instead
   - rectangle # window manager
 homebrew_installed_packages:
-  - zellij # terminal multiplexer
+  - tmux # terminal multiplexer
   - starship # fancy prompt
   - ruby
   - autoconf
@@ -111,7 +111,7 @@ homebrew_installed_packages:
   - mob # tool for pairing and keeping git clean
 homebrew_uninstalled_packages:
   - helix # using vim
-  - tmux # trying zellij
+  - zellij # terminal multiplexer - going back to tmux
   - mackup # maybe should uninstall - its for syncing preferences but ansible is doing that for me now
   - visualvm # All-in-One Java Troubleshooting Tool
   - midnight-commander # Terminal-based visual file manager
@@ -135,8 +135,8 @@ npm_packages:
   - yarn
   - tldr
 gem_packages:
-  - jekyll 
-  - bundler
+  # - jekyll 
+  # - bundler
 pip_packages:
   - boto3
   - botocore

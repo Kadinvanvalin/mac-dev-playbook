@@ -36,6 +36,9 @@
       when: configure_sudoers
       tags: ['sudoers']
 
+    - import_tasks: tasks/tmux.yml
+      tags: ['tmux']
+
     - import_tasks: tasks/terminal.yml
       when: configure_terminal
       tags: ['terminal']
