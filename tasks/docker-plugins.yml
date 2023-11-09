@@ -8,3 +8,10 @@
     src: "/usr/local/bin/docker-compose"
     dest: "~/.docker/cli-plugins/docker-compose"
     state: link
+- name: Create symlink for docker buildx docker cli directory exists.
+  file:
+    src: "/usr/local/bin/docker-buildx"
+    dest: "~/.docker/cli-plugins/docker-buildx"
+    state: link
+- name: set buildx as default builder
+  ansible.builtin.command: docker buildx install   

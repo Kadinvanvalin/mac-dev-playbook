@@ -19,6 +19,7 @@ dotfiles_files: # loading all of these dotfiles from my repo
   - .tmux.conf
   - .local
   - .amethyst.yml
+  - .default-npm-packages
 homebrew_cask_apps:
   - keybase # CJ uses this for secure communication
   - intellij-idea # CJ IDE
@@ -53,7 +54,7 @@ homebrew_installed_packages:
   - gettext
   - gifsicle
   - git
-  - github/gh/gh
+  - gh
   - go
   - gpg
   - httpie
@@ -99,6 +100,7 @@ homebrew_installed_packages:
   - nginx 
   - docker
   - docker-compose
+  - docker-buildx
   - colima
   - coreutils
   - findutils # Collection of GNU find, xargs, and locate
