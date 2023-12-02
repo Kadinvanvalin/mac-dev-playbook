@@ -136,7 +136,7 @@ npm_packages:
   - "@cloudflare/wrangler"
   - yarn
   - tldr
-gem_packages:
+# gem_packages:
   # - jekyll 
   # - bundler
 pip_packages:
