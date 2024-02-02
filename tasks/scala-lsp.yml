@@ -1,0 +1,4 @@
+---
+- name: setting up coursiero
+  pause: 
+  prompt: "run 'cs setup'"

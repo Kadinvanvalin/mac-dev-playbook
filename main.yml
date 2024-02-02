@@ -76,3 +76,5 @@
       tags: ['hosts']
     - import_tasks: tasks/docker-plugins.yml
       tags: ['docker-plugins']
+    - import_tasks: tasks/scala-lsp.yml
+      tags: ['scala-lsp']

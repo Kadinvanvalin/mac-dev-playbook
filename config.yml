@@ -47,6 +47,7 @@ homebrew_cask_uninstalled_apps:
   - visual-studio-code # using vscodium instead
   - rectangle # window manager
 homebrew_installed_packages:
+  - coursier/formulas/coursier # dep of scala lsp metals
   - tmux # terminal multiplexer
   - starship # fancy prompt
   - ruby
