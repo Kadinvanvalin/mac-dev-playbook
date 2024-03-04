@@ -112,6 +112,7 @@ homebrew_installed_packages:
   - zoxide # cd replacement
   - entr # Run arbitrary commands when files change
   - mob # tool for pairing and keeping git clean
+  - atuin # better terminal history
 homebrew_uninstalled_packages:
   - helix # using vim
   - zellij # terminal multiplexer - going back to tmux
