@@ -21,7 +21,6 @@ dotfiles_files: # loading all of these dotfiles from my repo
   - .amethyst.yml
   - .default-npm-packages
 homebrew_cask_apps:
-  - keybase # CJ uses this for secure communication
   - intellij-idea # CJ IDE
   - amazon-chime # AWS slack clone for communication with aws support
   - dozer # hides icons on the navbar
@@ -42,11 +41,13 @@ homebrew_cask_apps:
   - whichspace # displays current space in top bar
   - amethyst # nice idea - but rectangle is easier to use
 homebrew_cask_uninstalled_apps:
+  - keybase # CJ uses this for secure communication
   - virtualbox # intel only for CJ
   - warp # terminal alternatice
   - visual-studio-code # using vscodium instead
   - rectangle # window manager
 homebrew_installed_packages:
+  - apache-spark
   - coursier/formulas/coursier # dep of scala lsp metals
   - tmux # terminal multiplexer
   - starship # fancy prompt
