@@ -14,6 +14,7 @@ dotfiles_files: # loading all of these dotfiles from my repo
   - .gitignore
   - .inputrc
   - .vimrc
+  - .ideavimrc
   - .config
   - .colima
   - .tmux.conf
