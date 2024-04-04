@@ -26,10 +26,10 @@
       tags: ['dock']
     - role: asdf
       tags: ['asdf']
-    # - role: jenv
-    #   tags: ['jenv']
-    #   vars:
-    #     ansible_user: lookup('env', 'USER')
+      # - role: jenv
+  #   tags: ['jenv']
+  #   vars:
+  #     ansible_user: lookup('env', 'USER')
 
   tasks:
     - import_tasks: tasks/sudoers.yml
@@ -57,10 +57,10 @@
       when: configure_codium
       tags: ['vscodium']
     - import_tasks: tasks/zsh.yml
-      tags: ['zsh']  
+      tags: ['zsh']
     - import_tasks: tasks/vim.yml
       tags: ['vim']
-    - import_tasks: tasks/touch_id_sudo.yml 
+    - import_tasks: tasks/touch_id_sudo.yml
       tags: ['sudo']
     - name: Run configured post-provision ansible task files.
       include_tasks: "{{ outer_item }}"
@@ -76,5 +76,3 @@
       tags: ['hosts']
     - import_tasks: tasks/docker-plugins.yml
       tags: ['docker-plugins']
-    - import_tasks: tasks/scala-lsp.yml
-      tags: ['scala-lsp']
