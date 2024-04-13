@@ -27,7 +27,7 @@
     - role: asdf
       tags: ['asdf']
       # - role: jenv
-  #   tags: ['jenv']
+      #   tags: ['jenv']
   #   vars:
   #     ansible_user: lookup('env', 'USER')
 
@@ -76,3 +76,5 @@
       tags: ['hosts']
     - import_tasks: tasks/docker-plugins.yml
       tags: ['docker-plugins']
+    - import_tasks: tasks/tmux.yml
+      tags: ['tmux']

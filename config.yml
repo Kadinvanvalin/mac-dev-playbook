@@ -137,24 +137,18 @@ dotfiles_repo_version: main
 dotfiles_repo_local_destination: ~/github.com/kadinvanvalin/dotfiles
 npm_packages:
   - aws-cdk
-  - cdktf-cli
+  - cdktf-cli # terraform-cdk
   - "@cloudflare/wrangler"
   - yarn
   - tldr
   # gem_packages:
   # - jekyll
   # - bundler
-pip_packages:
-  - boto3
-  - botocore
-  - jmespath
-  # jenv_root: ~/.jenv
-# jenv_default_jdk: 16
-# jenv_jdks:
-#   - version: adoptopenjdk12
-#   - version: corretto
-#   - version: corretto8
-configure_codium: true
+  # pip_packages:
+  # - boto3 install per-project
+  # - botocore install per-project
+  # - jmespath install per-project
+configure_codium: false # fuck vscode
 codium_base_path: '~/Library/Application Support/VSCodium'
 codium_config_path: "User"
 codium_package_control:
@@ -163,21 +157,22 @@ codium_package_control:
   - "eamodio.gitlens"
   - "hashicorp.terraform"
   - "johnpapa.vscode-peacock"
-  - "Orta.vscode-jest"
-  - "scala-lang.scala"
-  - "redhat.ansible"
-  - "redhat.vscode-yaml"
-  - "ms-toolsai.jupyter"
-  - "ms-python.python"
+  # - "Orta.vscode-jest"
+  # - "scala-lang.scala"
+  # - "redhat.ansible"
+  #  - "redhat.vscode-yaml"
+  #  - "ms-toolsai.jupyter"
+  # - "ms-python.python"
   - "vscodevim.vim"
 asdf_plugins:
   - name: "nodejs"
     environment: {} # an optional dictionary of environment variables for build configuration
     versions:
       - lts-gallium
-    global: lts-gallium    # set as a global version, optional
+      - lts-hydrogen
+    global: lts-hydrogen
   - name: "java"
     versions:
       - corretto-17.0.2.8.1
-      - corretto-8.322.06.1
+      - corretto-8.402.08.1
     global: corretto-17.0.2.8.1

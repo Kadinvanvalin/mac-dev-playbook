@@ -1,7 +1,5 @@
+
 ---
-- name: clone tmux package manager
-  ansible.builtin.git:
-    repo: https://github.com/tmux-plugins/tpm
-    dest: ~/.tmux/plugins/tpm
-    single_branch: yes
-    version: master
+- name: We need to install tmux plugins, start the server and install with prefix-I
+  pause:
+    prompt: "run in another terminal prefix-I for tmux"
