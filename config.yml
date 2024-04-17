@@ -8,6 +8,7 @@ homebrew_taps:
   - helix-editor/helix
   - remotemobprogramming/brew
 dotfiles_files: # loading all of these dotfiles from my repo
+  - .ticket
   - .gitconfig
   - .aliases
   - .zshrc
