@@ -49,6 +49,7 @@ homebrew_cask_uninstalled_apps:
   - visual-studio-code # using vscodium instead
   - rectangle # window manager
 homebrew_installed_packages:
+  - argo # Get stuff done with container-native workflows for Kubernetes
   - minikube # needed for kubernetes
   - kubectl # needed for kubernetes
   - ammonite-repl # scala repl
